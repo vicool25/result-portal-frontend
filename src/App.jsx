@@ -3,6 +3,7 @@ import { Routes, Route, Navigate } from 'react-router-dom';
 import { useAuth } from './context/AuthContext';
 import Login from './pages/Login';
 import Register from './pages/Register';
+import Portal from './pages/Portal';
 import Dashboard from './pages/Dashboard';
 import Students from './pages/Students';
 import StudentDetail from './pages/StudentDetail';
@@ -55,6 +56,8 @@ export default function App() {
           </PublicRoute>
         }
       />
+      <Route path="/portal" element={<Portal />} />
+
       <Route
         path="/"
         element={
@@ -70,7 +73,7 @@ export default function App() {
         <Route path="courses" element={<Courses />} />
         <Route path="results" element={<Results />} />
       </Route>
-      <Route path="*" element={<Navigate to="/dashboard" replace />} />
+      <Route path="*" element={<Navigate to="/portal" replace />} />
     </Routes>
   );
 }

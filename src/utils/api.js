@@ -76,4 +76,6 @@ export const api = {
   createResult: (data) => request('/results', { method: 'POST', body: data }),
   updateResult: (id, data) => request(`/results/${id}`, { method: 'PUT', body: data }),
   deleteResult: (id) => request(`/results/${id}`, { method: 'DELETE' }),
+
+  portalLookupStudent: (studentId) => request(`/portal/lookup/${encodeURIComponent(studentId)}`),
 };

@@ -1300,3 +1300,381 @@ a:hover {
     margin: 0;
   }
 }
+
+.portal-page {
+  flex-direction: column;
+  gap: 16px;
+  padding: 20px;
+}
+
+.portal-top-link {
+  width: 100%;
+  max-width: 420px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.portal-card {
+  max-width: 480px;
+}
+
+.portal-tips {
+  margin-top: 24px;
+  padding: 16px;
+  background: #f9fafb;
+  border-radius: var(--radius);
+  border: 1px solid var(--border-light);
+}
+
+.portal-tips > p {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 8px;
+}
+
+.portal-tips ul {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.portal-tips li {
+  font-size: 12px;
+  color: var(--text-light);
+  line-height: 1.6;
+  margin-bottom: 2px;
+}
+
+.spinner-sm {
+  width: 16px;
+  height: 16px;
+  border-width: 2px;
+}
+
+.portal-result-page {
+  min-height: 100vh;
+  background: #f3f4f6;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.portal-result-actions {
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.portal-result-actions-right {
+  display: flex;
+  gap: 10px;
+}
+
+.portal-result-card {
+  width: 100%;
+  max-width: 900px;
+  background: white;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+  padding: 40px;
+}
+
+.portal-result-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-bottom: 24px;
+  border-bottom: 2px solid var(--primary-light);
+  margin-bottom: 28px;
+}
+
+.portal-school-info {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.portal-school-logo {
+  width: 56px;
+  height: 56px;
+  background: linear-gradient(135deg, var(--primary), #7c3aed);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  box-shadow: var(--shadow-sm);
+}
+
+.portal-school-info h1 {
+  font-size: 20px;
+  margin: 0;
+  color: var(--primary-dark);
+  letter-spacing: 0.02em;
+}
+
+.portal-school-sub {
+  font-size: 12px;
+  color: var(--text-light);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-top: 4px;
+}
+
+.portal-issue-date {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+}
+
+.portal-issue-label {
+  font-size: 11px;
+  color: var(--text-light);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.portal-issue-value {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.portal-student-profile {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+  padding: 20px;
+  background: linear-gradient(135deg, #fafbff 0%, #f5f3ff 100%);
+  border-radius: var(--radius-lg);
+}
+
+.portal-avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary), #7c3aed);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  flex-shrink: 0;
+  box-shadow: var(--shadow-md);
+}
+
+.portal-student-info {
+  flex: 1;
+  min-width: 200px;
+}
+
+.portal-student-info h2 {
+  font-size: 22px;
+  margin: 0 0 4px;
+}
+
+.portal-student-id {
+  color: var(--text-light);
+  font-size: 14px;
+  margin: 0 0 10px;
+}
+
+.portal-student-meta {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.portal-gpa-box {
+  padding: 14px 24px;
+  background: linear-gradient(135deg, var(--primary), #7c3aed);
+  color: white;
+  border-radius: var(--radius-lg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 110px;
+  box-shadow: var(--shadow-md);
+}
+
+.portal-gpa-label {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  opacity: 0.85;
+}
+
+.portal-gpa-value {
+  font-size: 28px;
+  font-weight: 700;
+  font-family: 'SF Mono', 'Consolas', monospace;
+  line-height: 1.1;
+  margin: 2px 0;
+}
+
+.portal-gpa-sub {
+  font-size: 11px;
+  opacity: 0.85;
+}
+
+.portal-contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 14px 24px;
+  margin-bottom: 28px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.portal-contact-item {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.portal-contact-label {
+  font-size: 11px;
+  color: var(--text-light);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-weight: 500;
+}
+
+.portal-contact-item span:not(.portal-contact-label) {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.portal-empty {
+  text-align: center;
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  color: var(--text-light);
+  background: var(--border-light);
+  border-radius: var(--radius);
+}
+
+.portal-empty-icon {
+  width: 56px;
+  height: 56px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+}
+
+.portal-semester-section {
+  margin-bottom: 28px;
+}
+
+.portal-semester-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.portal-semester-header h3 {
+  font-size: 15px;
+  margin: 0;
+  padding: 6px 14px;
+  background: var(--primary-light);
+  color: var(--primary-dark);
+  border-radius: 999px;
+  display: inline-block;
+}
+
+.portal-semester-gpa {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--text-light);
+}
+
+.portal-semester-gpa strong {
+  color: var(--primary-dark);
+  font-size: 16px;
+  font-family: 'SF Mono', 'Consolas', monospace;
+}
+
+.portal-semester-credits {
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+.portal-table .num-col {
+  text-align: right;
+}
+
+.portal-result-footer {
+  margin-top: 32px;
+  padding-top: 20px;
+  border-top: 1px dashed var(--border);
+  text-align: center;
+}
+
+.portal-result-footer p {
+  font-size: 11px;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+@media print {
+  .print-hide {
+    display: none !important;
+  }
+
+  .portal-result-page {
+    padding: 0;
+    background: white;
+  }
+
+  .portal-result-card {
+    box-shadow: none;
+    padding: 20px;
+    max-width: none;
+    border-radius: 0;
+  }
+}
+
+@media (max-width: 700px) {
+  .portal-result-card {
+    padding: 20px;
+  }
+
+  .portal-result-header {
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+  }
+
+  .portal-issue-date {
+    align-items: flex-start;
+  }
+
+  .portal-student-profile {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .portal-gpa-box {
+    width: 100%;
+  }
+}
