@@ -163,7 +163,7 @@ export default function Results() {
                   {filtered.map((r) => (
                     <tr key={r.id}>
                       <td>
-                        <Link to={`/students/${r.student_id}`} className="student-name">
+                        <Link to={`/students/${r.id}`} className="student-name">
                           <div><strong>{r.first_name} {r.last_name}</strong></div>
                           <div className="mono small-text">{r.student_id}</div>
                         </Link>
