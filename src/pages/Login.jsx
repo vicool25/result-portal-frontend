@@ -74,6 +74,18 @@ export default function Login() {
         <div className="demo-credentials">
           <p><strong>Demo:</strong> admin@school.edu / admin123</p>
         </div>
+
+        <div className="auth-divider">
+          <span>or</span>
+        </div>
+
+        <div className="portal-cta">
+          <p className="portal-cta-title">Are you a student?</p>
+          <p className="portal-cta-sub">Check your exam results online — no login required</p>
+          <Link to="/portal" className="btn btn-outline btn-block portal-cta-btn">
+            🎓 Check my Result
+          </Link>
+        </div>
       </div>
     </div>
   );

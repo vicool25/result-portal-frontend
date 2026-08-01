@@ -106,6 +106,18 @@ export default function Register() {
         <div className="auth-footer">
           Already have an account? <Link to="/login">Sign in</Link>
         </div>
+
+        <div className="auth-divider">
+          <span>or</span>
+        </div>
+
+        <div className="portal-cta">
+          <p className="portal-cta-title">Are you a student?</p>
+          <p className="portal-cta-sub">Check your exam results online — no login required</p>
+          <Link to="/portal" className="btn btn-outline btn-block portal-cta-btn">
+            🎓 Check my Result
+          </Link>
+        </div>
       </div>
     </div>
   );

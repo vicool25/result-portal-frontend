@@ -286,6 +286,64 @@ a:hover {
   margin: 0;
 }
 
+.auth-divider {
+  display: flex;
+  align-items: center;
+  margin: 24px 0 20px;
+  gap: 12px;
+}
+
+.auth-divider::before,
+.auth-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+}
+
+.auth-divider span {
+  font-size: 12px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 500;
+}
+
+.portal-cta {
+  padding: 18px;
+  background: linear-gradient(135deg, #f0fdf4 0%, #ecfeff 100%);
+  border: 1px solid #bbf7d0;
+  border-radius: var(--radius-lg);
+  text-align: center;
+}
+
+.portal-cta-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #065f46;
+  margin: 0 0 4px;
+}
+
+.portal-cta-sub {
+  font-size: 12px;
+  color: #0f766e;
+  margin: 0 0 12px;
+  opacity: 0.85;
+}
+
+.portal-cta-btn {
+  background: white;
+  border-color: #10b981;
+  color: #065f46;
+  font-weight: 600;
+}
+
+.portal-cta-btn:hover {
+  background: #10b981;
+  border-color: #10b981;
+  color: white;
+}
+
 .alert {
   padding: 10px 14px;
   border-radius: var(--radius);
