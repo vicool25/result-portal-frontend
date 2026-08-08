@@ -30,7 +30,7 @@ export default function Courses() {
     }
   }
 
-  const filtered = courses.filter(c => {
+  const filtered = courses?.filter(c => {
     if (!search) return true;
     const q = search.toLowerCase();
     return (

@@ -40,7 +40,7 @@ export default function Results() {
     }
   }
 
-  const filtered = results.filter(r => {
+  const filtered = results?.filter(r => {
     if (search) {
       const q = search.toLowerCase();
       const matchName = `${r.first_name} ${r.last_name}`.toLowerCase().includes(q);

@@ -106,7 +106,7 @@ export default function StudentDetail() {
   const assignedCourseIds = new Set(student.results?.map(r => r.course_id) || []);
   const availableCourses = editingResult
     ? courses
-    : courses.filter(c => !assignedCourseIds.has(c.id));
+    : courses?.filter(c => !assignedCourseIds.has(c.id));
 
   return (
     <div className="page">

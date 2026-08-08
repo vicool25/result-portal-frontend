@@ -40,7 +40,7 @@ export default function Students() {
     }
   }
 
-  const filtered = students.filter(s => {
+  const filtered = students?.filter(s => {
     if (!search) return true;
     const q = search.toLowerCase();
     return (
